@@ -1,3 +1,8 @@
+@font-face {
+    font-family: DrukWide;
+    src: url("../fonts/Druk-Wide-Bold.ttf");
+}
+
 
 *{
     margin: 0;
@@ -23,3 +28,51 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+body{
+    overflow-x: hidden;
+}
+
+/*******************MAIN PAGE********************/
+
+.pageOne{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    font-family: DrukWide;
+}
+
+.pageOne h1{
+    font-size: 3.5vw;
+}
+
+.pageOne h2{
+    font-size: 2.5vw;
+    margin-top: -1vw;
+}
+
+/*******************MAIN PAGE********************/
+
+/*******************PROJECT PAGE********************/
+
+.pageTwo{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*******************PROJECT PAGE********************/
+
+/*******************LAB PAGE********************/
+
+.pageThree{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*******************LAB PAGE********************/
