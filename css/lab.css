@@ -91,26 +91,32 @@ header{
     width: 8ch;
     overflow: hidden;
     text-align: center;
-    animation: typing 2s, blink .5s step-end infinite alternate;
     white-space: nowrap;
     line-height: 1;
 }
 
-@keyframes typing {
-    from {
-      width: 0;
-      text-align: center;
-      font-size: 4.5vw;
-    }
-  }
 
 /*******************MAIN PAGE********************/
+
 
 /*******************PROJECT PAGE********************/
 
 .pageTwo{
     width: 100vw;
     height: 100vh;
+    font-family: DrukWide;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 5vh;
+}
+
+.labList{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*******************PROJECT PAGE********************/

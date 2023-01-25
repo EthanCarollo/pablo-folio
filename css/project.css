@@ -91,18 +91,11 @@ header{
     width: 8ch;
     overflow: hidden;
     text-align: center;
-    animation: typing 2s, blink .5s step-end infinite alternate;
     white-space: nowrap;
     line-height: 1;
 }
 
-@keyframes typing {
-    from {
-      width: 0;
-      text-align: center;
-      font-size: 4.5vw;
-    }
-  }
+
 
 /*******************MAIN PAGE********************/
 
@@ -111,6 +104,44 @@ header{
 .pageTwo{
     width: 100vw;
     height: 100vh;
+    font-family: DrukWide;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 5vh;
+}
+
+.labList{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+
+.project{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+    cursor: pointer;
+}
+
+.project:hover .imageProject{
+    width: 31vw;
+    height: 31vw;
+    box-shadow: 0 0.5vh 3vh rgba(0, 0, 0, 0.486);
+    transition: all 1s;
+}
+
+.imageProject{
+    width: 30vw;
+    height: 30vw;
+    transition: all 1s;
 }
 
 /*******************PROJECT PAGE********************/
