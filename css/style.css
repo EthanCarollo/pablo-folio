@@ -6,6 +6,7 @@
 
 *{
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -31,6 +32,7 @@ time, mark, audio, video {
 
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /********************HEADER******************/
@@ -43,15 +45,32 @@ header{
     justify-content: left;
     font-size: 2vh;
     z-index: 10;
+    transition: all 1s;
 }
+
+header.minimize{
+    transition: all 1s;
+}
+
+
 
 .category{
     font-family: DrukWide;
     color: black;
     padding: 1vh;
     margin: 1.5vh;
-    font-size: 3.5vh;
+    font-size: 1.75vw;
+    transition: all 1s;
 
+}
+
+header.minimize .category{
+    font-family: DrukWide;
+    color: black;
+    padding: 1vh;
+    margin: 1.5vh;
+    font-size: 1.5vw;
+    transition: all 1s;
 }
 
 .category a{
@@ -65,18 +84,21 @@ header{
 
 .navigation{
     height: 80%;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+}
+
+.littleP{
+    position: relative;
+    top : -3vh;
+    font-size: 3vh;
 }
 
 .pageOne{
     width: 100vw;
     height: 100vh;
-
+    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
 
@@ -84,10 +106,8 @@ header{
 }
 
 .pageOne h1{
-    position: absolute;
-    top: 40vh;
-    right: 10%;
     font-size: 3.5vw;
+    padding-top: 5vh;
     width: 8ch;
     overflow: hidden;
     text-align: center;
@@ -111,6 +131,66 @@ header{
 .pageTwo{
     width: 100vw;
     height: 100vh;
+    text-align: center;
+    font-family: DrukWide;
+    
+}
+
+.pageTwo h1{
+    font-size: 6vh;
+    padding: 3vh;
 }
 
 /*******************PROJECT PAGE********************/
+
+@media (orientation: portrait) {
+    header{
+        position: fixed;
+        top: 0%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        width: 100vw;
+    }
+    .category{
+        font-family: DrukWide;
+        padding: 1vh;
+        margin: 1.5vw;
+        font-size: 5vw;
+    
+    }
+    /***********************/
+
+    .navigation{
+        height: 40%;
+    }
+    
+    .pageOne{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .pageOne h1{
+        font-size: 2.5ch;
+    }
+
+    header.minimize .category{
+        font-family: DrukWide;
+        color: black;
+        padding: 1vh;
+        margin: 1.5vh;
+        font-size: 4vw;
+        transition: all 1s;
+    }
+    .pageTwo h1{
+        font-size: 6vh;
+        padding-top: 6vh;
+    }
+
+    .littleP{
+        position: relative;
+        top : -1.2vh;
+        font-size: 3vh;
+    }
+  }
