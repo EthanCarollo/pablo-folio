@@ -34,15 +34,33 @@ body{
 }
 
 /********************HEADER******************/
-
 header{
     position: fixed;
     top: 0%;
-    left: 3%;
+    
+    padding-left: 3%;
+    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: left;
     font-size: 2vh;
     z-index: 10;
+    
+    background-color: white;
+    transition: all 0.5s;
+}
+
+header.minimize{
+    transition: all 0.5s;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: left;
+    font-size: 2vh;
+    padding-left: 3%;
+    z-index: 10;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.137);
 }
 
 .category{
@@ -119,13 +137,12 @@ h1{
 
 
 .project{
-    width: 40vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 40vw;
-    cursor: pointer;
 }
 
 .project:hover .imageProject{

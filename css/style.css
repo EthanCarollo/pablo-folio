@@ -40,16 +40,30 @@ body{
 header{
     position: fixed;
     top: 0%;
-    left: 3%;
+    
+    padding-left: 3%;
+    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: left;
     font-size: 2vh;
     z-index: 10;
-    transition: all 1s;
+    
+    background-color: white;
+    transition: all 0.5s;
 }
 
 header.minimize{
-    transition: all 1s;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: left;
+    font-size: 2vh;
+    padding-left: 3%;
+    z-index: 10;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.137);
 }
 
 
@@ -69,7 +83,7 @@ header.minimize .category{
     color: black;
     padding: 1vh;
     margin: 1.5vh;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     transition: all 1s;
 }
 
