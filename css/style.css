@@ -166,6 +166,19 @@ header.minimize .category{
         justify-content: center;
         z-index: 10;
         width: 100vw;
+        padding: 0%;
+    }
+
+    header.minimize{
+        position: fixed;
+        top: 0%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        width: 100vw;
+        font-size: 3.5vh;
+        padding: 0%;
     }
     .category{
         font-family: DrukWide;
@@ -192,14 +205,13 @@ header.minimize .category{
     header.minimize .category{
         font-family: DrukWide;
         color: black;
-        padding: 1vh;
-        margin: 1.5vh;
-        font-size: 4vw;
+        font-size: 5vw;
         transition: all 1s;
     }
     .pageTwo h1{
+        padding: 0vh;
         font-size: 6vh;
-        padding-top: 6vh;
+        padding-top: 8vh;
     }
 
     .littleP{
