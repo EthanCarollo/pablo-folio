@@ -399,7 +399,7 @@ footer .moreInfo h1{
         margin: 0;
         padding: 0vw;
         padding-top: 1vh;
-        text-align: left;
+        display: none;
         width: 100%;
         font-size: 1.2vh;
     }
