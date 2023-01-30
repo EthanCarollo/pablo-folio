@@ -406,37 +406,37 @@ footer .moreInfo h1{
 
     /*******************PROJECT PAGE********************/
 
-.pageTwo{
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    font-family: DrukWide;
+    .pageTwo{
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        font-family: DrukWide;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+    }
 
-.pageTwo h1{
-    font-size: 10vw;
-    padding-top: 8vh;
-}
+    .pageTwo h1{
+        font-size: 10vw;
+        padding-top: 8vh;
+    }
 
-.bar{
-    margin: 3vw;
-    width: 20%;
-    height: 0.5vh;
-    background-color: black;
-}
+    .bar{
+        margin: 3vw;
+        width: 20%;
+        height: 0.5vh;
+        background-color: black;
+    }
 
-.pageTwo h2{
-    font-size: 4.25vw;
-    width: 80%;
-}
+    .pageTwo h2{
+        font-size: 4.25vw;
+        width: 80%;
+    }
 
-.topTxt{
-    font-size: 8vw;
+    .topTxt{
+        font-size: 8vw;
+    }
 }
-  }
